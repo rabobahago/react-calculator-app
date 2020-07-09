@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import{Button} from './components/Button';
 import {Input} from './components/Input';
+import {ClearButton} from './components/ClearButton.jsx'
 
 class App extends React.Component {
 
@@ -39,6 +40,9 @@ class App extends React.Component {
             <Button>0</Button>
             <Button>=</Button>
             <Button>*</Button>
+          </div>
+          <div className='row'>
+            <ClearButton handleClear={()=>this.setState({input: ''})}>Clear</ClearButton>
           </div>
         </div>
       </div>
